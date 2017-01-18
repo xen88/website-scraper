@@ -55,12 +55,14 @@ class checkDir {
         }
     }
 }
-// *** init script *** //
+
+// *** run script *** //
 (() => {
     new checkDir(targetDir).run();
     new scraper(targetUrl, targetDir).run();
 })()
 
+// *** used for testing *** //
 exports._test = {
     targetUrl: targetUrl,
     targetDir: targetDir,
